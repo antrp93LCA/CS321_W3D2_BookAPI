@@ -36,6 +36,8 @@ namespace CS321_W3D2_BookAPI
 
             // TODO: register the AuthorService for injection using AddScoped   
             services.AddScoped<IAuthorService, AuthorService>();
+
+            services.AddScoped<IPublisherService, PublisherService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
